@@ -1,0 +1,40 @@
+/* TYPOGRAPHY */
+
+h1 {
+	font-size: 220px;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	color: #ec5671;
+}
+
+h2 {
+	font-size: 48px;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	color: #0000;
+}
+
+h3 {
+	font-size: 48px;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	color: #f1f1f1;
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+
+p {
+	font-size: 18px;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	color: #f1f1f1;
+}
+
+a {
+	font-size: 21px;
+	color: #f1f1f1;
+}
