@@ -2,6 +2,14 @@
 
 body {
 	margin: 0;
+	background-color: #fff9b8;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.form-wrapper {
+	color: #f1f1f1;
+	background-color: #ec5671;
+	display: flex;
 }
 
 .content {
