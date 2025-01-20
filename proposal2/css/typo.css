@@ -38,3 +38,26 @@ a {
 	font-size: 21px;
 	color: #f1f1f1;
 }
+
+.story a {
+	background-color: #ec5671;
+	padding: 10px 20px;
+	border-radius: 40px;
+	text-decoration: none;
+	margin-top: 50px;
+}
+
+.testimony a {
+	background-color: #6bc6b1;
+	padding: 10px 20px;
+	border-radius: 40px;
+	text-decoration: none;
+}
+
+.story h3 {
+	width: 50%;
+}
+
+.testimony h3 {
+	width: 55%;
+}
