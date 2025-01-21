@@ -39,6 +39,32 @@ a {
 	color: #f1f1f1;
 }
 
+.untold h1 {
+	margin-left: -25px;
+	margin-bottom: 25px;
+}
+
+.ten-years h2 {
+	color: #000;
+}
+
+.ten-years p {
+	color: #000;
+}
+
+.ten-years a {
+	background-color: #6bc6b1;
+	padding: 10px 20px;
+	border-radius: 40px;
+	text-decoration: none;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.ten-years a:hover {
+	background-color: #ec5671;
+	color: #fff;
+}
+
 .story a {
 	background-color: #ec5671;
 	padding: 10px 20px;

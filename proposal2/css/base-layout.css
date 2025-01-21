@@ -5,6 +5,39 @@ body {
 	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+.content-home {
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: minmax(100px, auto);
+	grid-template-areas:
+		"untold untold-img"
+		"ten-years ten-years";
+}
+
+.untold {
+	grid-area: untold;
+	justify-self: self-start;
+	align-self: center;
+	padding-bottom: -200px;
+}
+
+.untold-img {
+	grid-area: untold-img;
+	justify-self: center;
+	align-self: center;
+}
+
+.ten-years {
+	grid-area: ten-years;
+	text-align: center;
+	justify-self: center;
+	align-self: center;
+	justify-items: center;
+	width: 80%;
+	padding-bottom: 150px;
+}
+
 .content-story {
 	display: grid;
 	margin: 0 auto;
@@ -121,6 +154,19 @@ body {
 }
 
 @media (max-width: 768px) {
+	.content-home {
+		display: grid;
+		margin: 0 auto;
+		grid-template-columns: repeat(1, 1fr);
+		grid-auto-rows: minmax(100px, auto);
+		text-align: center;
+		justify-self: center;
+		grid-template-areas:
+			"untold"
+			"untold-img"
+			"ten-years";
+	}
+
 	.content-story {
 		display: grid;
 		margin: 0 auto;
