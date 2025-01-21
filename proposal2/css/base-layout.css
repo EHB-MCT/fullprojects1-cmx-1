@@ -5,19 +5,25 @@ body {
 	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-.content {
+.content-story {
 	display: grid;
 	margin: 0 auto;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 45% 55%;
 	grid-auto-rows: minmax(100px, auto);
-	grid-template-areas:
-		"story-img story"
-		"testimony testimony-img";
+	grid-template-areas: "story-img story";
+}
+
+.content-testimony {
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: 55% 45%;
+	grid-auto-rows: minmax(100px, auto);
+	grid-template-areas: "testimony testimony-img";
 }
 
 .story-img {
 	grid-area: story-img;
-	background-color: #6bc6b1; /* Blauw */
+	background-color: #6bc6b1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -25,21 +31,21 @@ body {
 
 .story {
 	grid-area: story;
-	background-color: #6bc6b1; /* Blauw */
+	background-color: #6bc6b1;
 	padding: 20px;
 	color: #fff;
 }
 
 .testimony {
 	grid-area: testimony;
-	background-color: #ec5671; /* Rood */
+	background-color: #ec5671;
 	padding: 20px;
 	color: #fff;
 }
 
 .testimony-img {
 	grid-area: testimony-img;
-	background-color: #ec5671; /* Rood */
+	background-color: #ec5671;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -48,6 +54,106 @@ body {
 .story-img img,
 .testimony-img img {
 	width: 100%;
-	height: auto;
-	object-fit: cover;
+	height: 100%;
+}
+
+.content-form {
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: minmax(100px, auto);
+	grid-template-areas: "form-img form-wrapper";
+}
+
+.form-img {
+	grid-template-areas: form-img;
+}
+
+.form-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.form-wrapper {
+	grid-template-areas: form-wrapper;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	color: #f1f1f1;
+	background-color: #ec5671;
+	padding: 20px;
+	display: flex;
+	align-items: left;
+	justify-content: center;
+}
+
+.input-box {
+	padding: 10px;
+	padding-top: 10px;
+	border-radius: 30px;
+	border: 0px;
+	width: 100%;
+}
+
+.input {
+	padding: 5px;
+}
+
+.label {
+	font-size: 24px;
+	display: inline-block;
+	padding: 5px;
+}
+
+.submit {
+	background-color: #69c7b1;
+	border-radius: 30px;
+	padding: 10px;
+	color: #f1f1f1;
+	width: 100%;
+	border: 0px;
+	transition: 0.3s;
+}
+
+.submit:hover {
+	transform: scale(1.1);
+	background-color: #fdf7b9;
+	color: #000;
+}
+
+@media (max-width: 768px) {
+	.content-story {
+		display: grid;
+		margin: 0 auto;
+		grid-template-columns: repeat(1, 1fr);
+		grid-auto-rows: minmax(100px, auto);
+		text-align: center;
+		justify-self: center;
+		grid-template-areas:
+			"story-img"
+			"story";
+	}
+
+	.content-testimony {
+		display: grid;
+		margin: 0 auto;
+		grid-template-columns: repeat(1, 1fr);
+		grid-auto-rows: minmax(100px, auto);
+		text-align: center;
+		justify-self: center;
+		grid-template-areas:
+			"testimony"
+			"testimony-img";
+	}
+
+	.content-form {
+		display: grid;
+		margin: 0 auto;
+		grid-template-columns: repeat(1, 1fr);
+		grid-auto-rows: minmax(100px, auto);
+		text-align: center;
+		justify-self: center;
+		grid-template-areas:
+			"form-img"
+			"form-wrapper";
+	}
 }

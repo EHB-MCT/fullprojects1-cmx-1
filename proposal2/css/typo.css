@@ -46,6 +46,7 @@ a {
 	text-decoration: none;
 	margin: 0 auto;
 	margin-left: 40%;
+	transition: background-color 0.3s, color 0.3s;
 }
 
 .testimony a {
@@ -55,6 +56,13 @@ a {
 	text-decoration: none;
 	margin: 0 auto;
 	margin-left: 40%;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.story a:hover,
+.testimony a:hover {
+	background-color: #fdf7b9;
+	color: #000;
 }
 
 .story h3 {
@@ -77,4 +85,17 @@ a {
 .testimony p {
 	margin-left: 10%;
 	margin-right: 10%;
+}
+
+@media (max-width: 768px) {
+	.story a,
+	.testimony a {
+		margin-left: 0%;
+	}
+
+	.story h3,
+	.testimony h3 {
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
