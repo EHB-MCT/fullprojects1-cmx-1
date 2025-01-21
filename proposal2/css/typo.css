@@ -113,6 +113,16 @@ a {
 	margin-right: 10%;
 }
 
+.content-footer {
+	background-color: #69c7b1;
+	color: black;
+}
+
+.content-footer p {
+	color: black;
+	font-size: 12px;
+}
+
 @media (max-width: 768px) {
 	.story a,
 	.testimony a {
