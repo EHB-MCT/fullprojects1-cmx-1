@@ -1,7 +1,7 @@
 /* TYPOGRAPHY */
 
 h1 {
-	font-size: 220px;
+	font-size: 150px;
 	margin-left: -25px;
 	margin-bottom: 25px;
 	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -9,13 +9,13 @@ h1 {
 }
 
 h2 {
-	font-size: 48px;
+	font-size: 32px;
 	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 	color: #0000;
 }
 
 h3 {
-	font-size: 48px;
+	font-size: 32px;
 	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 	color: #f1f1f1;
 }
@@ -37,7 +37,7 @@ p {
 }
 
 a {
-	font-size: 21px;
+	font-size: 18px;
 	color: #f1f1f1;
 }
 
@@ -54,67 +54,55 @@ a {
 	padding: 10px 20px;
 	border-radius: 40px;
 	text-decoration: none;
-	transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.3s, color 0.3s, transform 0.5s;
 	display: inline-block;
-	margin-top: 25px;
 	margin-bottom: 0;
+}
+
+.about-text1 a {
+	background-color: #ec5671;
+	padding: 10px 20px;
+	border-radius: 40px;
+	text-decoration: none;
+	transition: background-color 0.3s, color 0.3s, transform 0.5s;
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.about-text2 a {
+	background-color: #6bc6b1;
+	padding: 10px 20px;
+	border-radius: 40px;
+	text-decoration: none;
+	transition: background-color 0.3s, color 0.3s, transform 0.5s;
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.about-text1 a:hover,
+.about-text2 a:hover {
+	background-color: #fdf7b9;
+	color: #000;
+	transform: scale(1.2);
+	transition: transform 0.5s;
 }
 
 .ten-years a:hover {
 	background-color: #ec5671;
 	color: #fff;
-}
-
-.story a {
-	background-color: #ec5671;
-	padding: 10px 20px;
-	border-radius: 40px;
-	text-decoration: none;
-	margin: 0 auto;
-	margin-left: 40%;
-	transition: background-color 0.3s, color 0.3s;
-	display: inline-block;
-	margin-bottom: 25px;
-}
-
-.testimony a {
-	background-color: #6bc6b1;
-	padding: 10px 20px;
-	border-radius: 40px;
-	text-decoration: none;
-	margin: 0 auto;
-	margin-left: 40%;
-	transition: background-color 0.3s, color 0.3s;
-	display: inline-block;
-	margin-bottom: 25px;
+	transform: scale(1.2);
 }
 
 .story a:hover,
 .testimony a:hover {
 	background-color: #fdf7b9;
 	color: #000;
+	transform: scale(1.2);
+	transition: transform 0.5s;
 }
 
-.story h3 {
-	width: 50%;
-	margin-left: 10%;
-	margin-right: 10%;
-}
-
-.testimony h3 {
-	width: 65%;
-	margin-left: 10%;
-	margin-right: 10%;
-}
-
-.story p {
-	margin-left: 10%;
-	margin-right: 10%;
-}
-
-.testimony p {
-	margin-left: 10%;
-	margin-right: 10%;
+.your h1 {
+	width: 80%;
 }
 
 .support h2 {
@@ -140,16 +128,5 @@ a {
 	h1 {
 		font-size: 100px;
 		margin-left: 0px;
-	}
-
-	.story a,
-	.testimony a {
-		margin-left: 0%;
-	}
-
-	.story h3,
-	.testimony h3 {
-		margin-left: auto;
-		margin-right: auto;
 	}
 }
