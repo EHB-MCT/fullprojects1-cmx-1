@@ -90,7 +90,7 @@ nav a:hover {
 	}
 
 	.img-logo {
-		width: 45%;
+		width: 25%;
 	}
 	.donate {
 		background-color: #ec5671;
@@ -388,39 +388,74 @@ h2 {
 
 /********************************** FORM ******************************************/
 
-.form-wrapper {
-	height: 100vh;
-	display: flex;
+.content-form {
+	max-width: 95%;
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: minmax(100px, auto);
+	grid-template-areas: "form-img form-wrapper";
+	padding-bottom: 100px;
 }
 
-form {
+.form-container h3 {
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.form-container {
 	background-color: #ec5671;
-	font-family: Bebas Neue, sans-serif;
-	color: whitesmoke;
-	padding: 20px;
+}
+
+.form-img {
+	margin-top: 100px;
+	grid-template-areas: form-img;
+	align-self: center;
+	justify-self: center;
+}
+
+.form-img img {
 	width: 100%;
+	height: auto;
+}
+
+.form-wrapper {
+	grid-template-areas: form-wrapper;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	color: #f1f1f1;
+	padding: 20px;
 }
 
 .input-box {
 	padding: 10px;
+	padding-top: 10px;
 	border-radius: 30px;
 	border: 0px;
-	width: 50%;
 }
+
+.input {
+	padding: 5px;
+}
+
+.input-date {
+	display: block;
+}
+
 .label {
 	font-size: 24px;
 	display: inline-block;
 	padding: 5px;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .submit {
 	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-	font-size: 24px;
+	font-size: 21px;
 	background-color: #69c7b1;
 	border-radius: 30px;
 	padding: 10px;
 	color: #f1f1f1;
-	width: 30%;
+	width: 100%;
 	border: 0px;
 	transition: 0.3s;
 }
@@ -431,9 +466,59 @@ form {
 	color: #000;
 }
 
-.form-wrapper img {
-	width: 80%;
+@media (max-width: 1200px) {
+	.content-form {
+		align-self: center;
+		justify-self: center;
+		padding-bottom: 0px;
+		grid-template-columns: repeat(1, 1fr);
+		grid-auto-rows: minmax(100px, auto);
+		grid-template-areas:
+			"form-wrapper"
+			"form-img";
+	}
+
+	.form-wrapper {
+		grid-template-areas: form-wrapper;
+		align-self: center;
+		justify-self: center;
+		padding: 0px;
+	}
+
+	.form-img {
+		margin-top: 0px;
+		grid-template-areas: form-img;
+	}
 }
+
+@media (max-width: 700px) {
+	.content-form {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-auto-rows: minmax(100px, auto);
+		grid-template-areas:
+			"form-wrapper"
+			"form-img";
+	}
+
+	.form-wrapper {
+		grid-template-areas: form-wrapper;
+	}
+
+	.form-img {
+		grid-template-areas: form-img;
+		align-self: center;
+		justify-self: center;
+		width: 75%;
+		margin-left: 20%;
+	}
+
+	.form-img img {
+		width: 75%;
+		height: auto;
+	}
+}
+
 /************************************ FOOTER ***********************************/
 
 footer {
