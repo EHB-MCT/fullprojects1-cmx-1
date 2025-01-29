@@ -167,63 +167,69 @@
 						/>
 					</div>
 					<div class="form-wrapper">
-						<form action="#">
-							<h3>SHARE YOUR STORY</h3>
-							<div class="input">
-								<label class="label" for="name">Name</label><br />
-								<input
-									class="input-box"
-									type="text"
-									id="name"
-									name="name"
-									placeholder="John"
-								/>
-							</div>
-							<br />
-							<div class="input input-date">
-								<label class="label" for="email">Email adress</label><br />
-								<input
-									type="email"
-									id="email"
-									name="email"
-									placeholder="john.doe@mail.com"
-									class="input-box"
-								/>
-							</div>
-							<br />
-							<div class="input">
-								<label class="label" for="joinedIn">Joined in</label>
-								<input
-									class="input-box"
-									type="datetime-local"
-									id="joinedIn"
-									name="joinedIn"
-								/>
-							</div>
-							<br />
-							<div class="input">
-								<label class="label" for="message">Message</label><br />
-								<textarea
-									id="message"
-									name="message"
-									rows="6"
-									cols="50"
-									placeholder="..."
-								>
-								</textarea>
-							</div>
-							<br /><br />
-							<div class="form-button-group">
-								<div class="file-button">
-									<label class="label" for="myfile">Upload your pictures</label>
-									<input type="file" name="myfile" id="myfile" />
+						<div class="title">Registration</div>
+						<div class="content">
+							<!-- Registration form -->
+							<form action="#">
+								<div class="user-details">
+									<!-- Input for Full Name -->
+									<div class="input-box">
+										<span class="details">Full Name</span>
+										<input type="text" placeholder="Enter your name" required />
+									</div>
+									<!-- Input for Email -->
+									<div class="input-box">
+										<span class="details">Email</span>
+										<input
+											type="text"
+											placeholder="Enter your email"
+											required
+										/>
+									</div>
+									<!-- Input for Place -->
+									<div class="input-box">
+										<span class="details">Place</span>
+										<input type="text" placeholder="Enter your place" />
+									</div>
+									<!-- Input for Postal code -->
+									<div class="input-box">
+										<span class="details">Postal code</span>
+										<input type="text" placeholder="Enter your postal code" />
+									</div>
+									<!-- Input for Joined In -->
+									<div class="input-box">
+										<span class="details">Joined In</span>
+										<input
+											type="text"
+											placeholder="Enter the year you joined Cinemaximiliaan"
+										/>
+									</div>
+									<!-- Input for Confirm Category -->
+									<div class="input-box-drop-down">
+										<label for="cars">Choose a Catagory:</label>
+										<select name="cars" id="cars">
+											<option value="filmmaker">Filmmaker</option>
+											<option value="cook">Cook</option>
+											<option value="artist">Artist</option>
+											<option value="student">Student</option>
+											<option value="partner">Partner</option>
+										</select>
+									</div>
+									<!-- Input for Enter Your story -->
+									<div class="input-box">
+										<span class="details">Enter Your story</span>
+										<input
+											type="text"
+											placeholder="Enter your story"
+											required
+										/>
+									</div>
 								</div>
-								<br /><br />
-								<div class="buttons">
-									<input class="submit" type="submit" value="Submit" />
+								<div class="button">
+									<input type="submit" value="Register" />
 								</div>
-							</div>
-						</form>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
