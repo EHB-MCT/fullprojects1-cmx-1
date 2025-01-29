@@ -519,15 +519,27 @@ form .input-box span.details {
 	transition: all 0.3s ease;
 }
 
+.input-box.textarea-box {
+	width: calc(100% - 20px);
+}
+
+.input-box.textarea-box textarea {
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	width: 208%;
+	height: 90px;
+	outline: none;
+	font-size: 16px;
+	border-radius: 5px;
+	padding: 10px 15px;
+	border: 1px solid #ccc;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+	resize: none;
+}
+
 .user-details .input-box input:focus,
 .user-details .input-box input:valid {
 	border-color: #9b59b6;
-}
-
-form .gender-details .gender-title {
-	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-	font-size: 20px;
-	font-weight: 500;
 }
 
 form .category {
