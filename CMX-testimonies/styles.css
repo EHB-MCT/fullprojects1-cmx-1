@@ -14,6 +14,7 @@ body {
 /******************************* NAVIGATION ****************************************/
 
 nav {
+	position: fixed;
 	width: 100%;
 	top: 0px;
 	background-color: #ec5671;
@@ -364,6 +365,20 @@ h2 {
 	margin: auto;
 }
 
+.cross {
+	width: 20px;
+	height: auto;
+	position: absolute;
+	left: 470px;
+	bottom: 570px;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.cross:hover {
+	transform: scale(1.2);
+}
+
 @media (max-width: 750px) {
 	.testimonies-wrapper {
 		margin-top: 30px;
@@ -667,6 +682,24 @@ form .button input:hover {
 
 	.user-details::-webkit-scrollbar {
 		width: 5px;
+	}
+
+	.input-box.textarea-box {
+		width: calc(100% - 20px);
+	}
+
+	.input-box.textarea-box textarea {
+		font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+		width: 208%;
+		height: 90px;
+		outline: none;
+		font-size: 16px;
+		border-radius: 5px;
+		padding: 10px 15px;
+		border: 1px solid #ccc;
+		border-bottom-width: 2px;
+		transition: all 0.3s ease;
+		resize: none;
 	}
 }
 
