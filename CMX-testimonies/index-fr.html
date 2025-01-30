@@ -31,8 +31,12 @@
 			<ul id="navList">
 				<li><a href="#about">A PROPOS</a></li>
 				<li><a href="#testimonies">TEMOIGNAGES</a></li>
-				<li><a href="#share">PARTAGEZ</a></li>
-				<li><a class="donate" href="#">DONATE</a></li>
+				<li>
+					<a href="https://donate.kbs-frb.be/actions/FFO-Cinemaximiliaan"
+						>DONATE</a
+					>
+				</li>
+				<li><a class="donate" href="#partagez">PARTAGEZ</a></li>
 			</ul>
 			<a href="javascript:void(0);" class="nav-icon" onclick="toggleMenu()">
 				<i class="fa fa-bars"></i>
@@ -149,6 +153,96 @@
 			<div class="landing-page-call">
 				<h2>MERCI POUR VOTRE SOUTIEN</h2>
 				<p>Ensemble, nous pouvons faire une différence !</p>
+			</div>
+		</section>
+
+		<section id="form-section">
+			<div class="form-container">
+				<div class="content-form">
+					<div class="form-img">
+						<img
+							src="images/collage-form.jpg"
+							alt="A get together from the members of Cinemaximiliaan"
+						/>
+					</div>
+					<div class="form-wrapper">
+						<div class="title">Inscription</div>
+						<div class="content">
+							<!-- Registration form -->
+							<form action="#">
+								<div class="user-details">
+									<!-- Input for Full Name -->
+									<div class="input-box">
+										<span class="details">Nom complet</span>
+										<input
+											type="text"
+											placeholder="Entrez votre nom"
+											required
+										/>
+									</div>
+									<!-- Input for Email -->
+									<div class="input-box">
+										<span class="details">Email</span>
+										<input
+											type="text"
+											placeholder="Entrez votre adresse email"
+											required
+										/>
+									</div>
+									<!-- Input for Place -->
+									<div class="input-box">
+										<span class="details">Lieu de résidence</span>
+										<input
+											type="text"
+											placeholder="Entrez votre lieu de résidence"
+										/>
+									</div>
+									<!-- Input for Postal code -->
+									<div class="input-box">
+										<span class="details">Code postal</span>
+										<input type="text" placeholder="Entrez votre code postal" />
+									</div>
+									<!-- Input for Joined In -->
+									<div class="input-box">
+										<span class="details">Année d'adhésion</span>
+										<input
+											type="text"
+											placeholder="Indiquez l'année où vous avez rejoint Cinemaximiliaan"
+										/>
+									</div>
+									<!-- Input for Confirm Category -->
+									<div class="input-box-drop-down">
+										<label for="cars">Choisissez une catégorie:</label>
+										<select name="cars" id="cars">
+											<option value="filmmaker">Réalisateur</option>
+											<option value="cook">Cuisiner</option>
+											<option value="artist">Artiste</option>
+											<option value="student">Étudiant</option>
+											<option value="partner">Partenaire</option>
+										</select>
+									</div>
+									<!-- Input for Enter Your story -->
+									<div class="input-box textarea-box">
+										<span class="details">Entrez Votre Histoire</span>
+										<textarea
+											placeholder="Écrivez votre histoire ici"
+											required
+										></textarea>
+									</div>
+								</div>
+								<div class="file-button">
+									<label class="label" for="myfile"
+										>Téléchargez Vos Photos</label
+									>
+									<input type="file" name="myfile" id="myfile" />
+								</div>
+								<div class="button">
+									<input type="submit" value="Partagez" />
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 

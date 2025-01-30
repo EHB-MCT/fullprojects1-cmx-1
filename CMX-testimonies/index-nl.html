@@ -31,8 +31,12 @@
 			<ul id="navList">
 				<li><a href="#about">OVER</a></li>
 				<li><a href="#testimonies">GETUIGENISSEN</a></li>
-				<li><a href="#share">DEEL</a></li>
-				<li><a class="donate" href="#">DONEER</a></li>
+				<li>
+					<a href="https://donate.kbs-frb.be/actions/FFO-Cinemaximiliaan"
+						>DONEER</a
+					>
+				</li>
+				<li><a class="donate" href="#deel">DEEL</a></li>
 			</ul>
 			<a href="javascript:void(0);" class="nav-icon" onclick="toggleMenu()">
 				<i class="fa fa-bars"></i>
@@ -148,6 +152,87 @@
 			<div class="landing-page-call">
 				<h2>DANK JE WEL VOOR JE STEUN!</h2>
 				<p>Samen maken we een verschil!</p>
+			</div>
+		</section>
+
+		<section id="form-section">
+			<div class="form-container">
+				<div class="content-form">
+					<div class="form-img">
+						<img
+							src="images/collage-form.jpg"
+							alt="A get together from the members of Cinemaximiliaan"
+						/>
+					</div>
+					<div class="form-wrapper">
+						<div class="title">Registratie</div>
+						<div class="content">
+							<!-- Registration form -->
+							<form action="#">
+								<div class="user-details">
+									<!-- Input for Full Name -->
+									<div class="input-box">
+										<span class="details">Volledige Naam</span>
+										<input type="text" placeholder="Voer uw naam in" required />
+									</div>
+									<!-- Input for Email -->
+									<div class="input-box">
+										<span class="details">Email</span>
+										<input
+											type="text"
+											placeholder="Voer uw e-mailadres in"
+											required
+										/>
+									</div>
+									<!-- Input for Place -->
+									<div class="input-box">
+										<span class="details">Plaats</span>
+										<input type="text" placeholder="Voer uw woonplaats in" />
+									</div>
+									<!-- Input for Postal code -->
+									<div class="input-box">
+										<span class="details">Postcode</span>
+										<input type="text" placeholder="Voer uw postcode in" />
+									</div>
+									<!-- Input for Joined In -->
+									<div class="input-box">
+										<span class="details">Lid gewoden in</span>
+										<input
+											type="text"
+											placeholder="Voer het jaar in waarin u lid werd van Cinemaximiliaan"
+										/>
+									</div>
+									<!-- Input for Confirm Category -->
+									<div class="input-box-drop-down">
+										<label for="cars">Kies een categorie:</label>
+										<select name="cars" id="cars">
+											<option value="filmmaker">Filmmaker</option>
+											<option value="cook">Kok</option>
+											<option value="artist">Artist</option>
+											<option value="student">Student</option>
+											<option value="partner">Partner</option>
+										</select>
+									</div>
+									<!-- Input for Enter Your story -->
+									<div class="input-box textarea-box">
+										<span class="details">Voer uw verhaal in</span>
+										<textarea
+											placeholder="Schrijf uw verhaal hier"
+											required
+										></textarea>
+									</div>
+								</div>
+								<div class="file-button">
+									<label class="label" for="myfile">Upload Uw Foto's</label>
+									<input type="file" name="myfile" id="myfile" />
+								</div>
+								<div class="button">
+									<input type="submit" value="Deel" />
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 

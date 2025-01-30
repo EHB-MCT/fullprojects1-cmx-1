@@ -15,7 +15,6 @@ body {
 
 nav {
 	width: 100%;
-	position: fixed;
 	top: 0px;
 	background-color: #ec5671;
 	display: flex;
@@ -336,13 +335,14 @@ h2 {
 #popup3,
 #popup4 {
 	position: fixed;
-	top: 40%;
-	left: 75%;
+	top: 50%;
+	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 80%;
+	max-width: 500px; /* Voorkomt dat de pop-up te breed wordt */
 	visibility: hidden;
 	opacity: 0;
-	transition: 0.5s;
+	transition: opacity 0.5s ease, transform 0.5s ease;
 	z-index: 3;
 }
 
@@ -350,10 +350,18 @@ h2 {
 #popup2.active,
 #popup3.active,
 #popup4.active {
-	top: 55%;
 	visibility: visible;
 	opacity: 1;
-	transition: 0.5s;
+}
+
+#popup1 img,
+#popup2 img,
+#popup3 img,
+#popup4 img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: auto;
 }
 
 @media (max-width: 750px) {
@@ -574,6 +582,38 @@ form .category label .dot {
 
 form input[type="radio"] {
 	display: none;
+}
+
+.file-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.file-button label {
+	position: relative;
+	left: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 96%;
+	padding: 15px;
+	font-size: 21px;
+	color: whitesmoke;
+	background-color: #69c7b1;
+	border-radius: 30px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.file-button input {
+	display: none;
+}
+
+.file-button label:hover {
+	transform: scale(1.1);
+	background-color: #fdf7b9;
+	color: #000;
 }
 
 form .button {
