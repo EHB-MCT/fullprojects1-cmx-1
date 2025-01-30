@@ -87,7 +87,7 @@ nav a:hover {
 	width: 40%;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 900px) {
 	nav ul {
 		background-color: #ec5671;
 		position: absolute;
@@ -607,11 +607,11 @@ form input[type="radio"] {
 
 .file-button label {
 	position: relative;
-	left: 15px;
+	max-width: 80%;
+	width: 300px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 96%;
 	padding: 15px;
 	font-size: 21px;
 	color: whitesmoke;
@@ -634,7 +634,6 @@ form input[type="radio"] {
 form .button {
 	font-size: 18px;
 	text-align: center;
-	width: 100%;
 	cursor: pointer;
 	color: whitesmoke;
 	padding: 15px;
@@ -649,7 +648,7 @@ form .button input {
 	border-radius: 30px;
 	padding: 15px;
 	color: #f1f1f1;
-	width: 100%;
+	width: 330px;
 	border: 0px;
 	transition: 0.3s;
 }
